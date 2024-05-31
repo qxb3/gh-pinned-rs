@@ -1,5 +1,5 @@
 [package]
-name = "gh-pinned"
+name = "gh-pinned-rs"
 version = "1.0.0"
 edition = "2021"
 
