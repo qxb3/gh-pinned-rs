@@ -3,7 +3,7 @@
     <img src="https://img.shields.io/crates/v/gh-pinned-rs" />
     <img src="https://img.shields.io/crates/dr/gh-pinned-rs" />
 </p>
-<p align="center">Fetch pinned repositories from github./p>
+<p align="center">Fetch pinned repositories from github.</p>
 
 ## Installation
 
