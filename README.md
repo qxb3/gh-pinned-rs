@@ -9,7 +9,7 @@
 
 ```toml
 [dependencies]
-gh-pinned-rs = "1.0.3"
+gh-pinned-rs = "1.0.4"
 ```
 
 ## Example

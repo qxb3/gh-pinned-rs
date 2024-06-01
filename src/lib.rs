@@ -1,6 +1,5 @@
 use reqwest::Client;
 use tl::NodeHandle;
-use tokio;
 
 #[allow(dead_code)]
 #[derive(Debug)]
@@ -26,7 +25,7 @@ pub async fn pinned(name: &str) -> Result<Vec<PinnedRepo>, String> {
     let client = Client::new();
     let mut repos: Vec<PinnedRepo> = vec![];
 
-    let gh_page = client.get(name).send().await.map_err(|err| err.to_string())?;
+    let gh_page = client.get(format!("https://github.com/{name}")).send().await.map_err(|err| err.to_string())?;
     let html = gh_page.text().await.unwrap();
     let dom = tl::parse(html.as_str(), tl::ParserOptions::default()).unwrap();
     let parser = dom.parser();
