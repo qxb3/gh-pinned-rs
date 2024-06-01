@@ -9,7 +9,7 @@
 
 ```toml
 [dependencies]
-gh-pinned-rs = "1.0.2"
+gh-pinned-rs = "1.0.3"
 ```
 
 ## Example
@@ -19,7 +19,7 @@ use gh_pinned_rs::pinned;
 
 #[tokio::main]
 async fn main() -> Result<(), String> {
-    let pinned_repos = pinned("qxb3");
+    let pinned_repos = pinned("qxb3").await?;
 
     println("{:#?}", pinned_repos);
 }

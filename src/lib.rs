@@ -22,8 +22,7 @@ impl PinnedRepo {
     }
 }
 
-#[tokio::main]
-pub async fn pinned(name: String) -> Result<Vec<PinnedRepo>, String> {
+pub async fn pinned(name: &str) -> Result<Vec<PinnedRepo>, String> {
     let client = Client::new();
     let mut repos: Vec<PinnedRepo> = vec![];
 

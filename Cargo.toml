@@ -2,7 +2,7 @@
 name = "gh-pinned-rs"
 description = "Fetch pinned repositories from github."
 license = "MIT"
-version = "1.0.2"
+version = "1.0.3"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
