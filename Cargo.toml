@@ -2,7 +2,7 @@
 name = "gh-pinned-rs"
 description = "Fetch pinned repositories from github."
 license = "MIT"
-version = "2.0.1"
+version = "2.0.3"
 documentation = "https://docs.rs/gh-pinned-rs"
 repository = "https://github.com/qxb3/gh-pinned-rs"
 homepage = "https://github.com/qxb3/gh-pinned-rs"
@@ -21,3 +21,6 @@ blocking = ["reqwest/blocking"]
 version = "1.36.0"
 optional = true
 features = ["full"]
+
+[package.metadata.docs.rs]
+features = ["async", "blocking"]
