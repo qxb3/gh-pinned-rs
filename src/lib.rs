@@ -1,13 +1,12 @@
 use reqwest::Client;
 use tl::NodeHandle;
 
-#[allow(dead_code)]
 #[derive(Debug)]
 pub struct PinnedRepo {
-    name: String,
-    description: String,
-    stars: u32,
-    forks: u32
+    pub name: String,
+    pub description: String,
+    pub stars: u32,
+    pub forks: u32
 }
 
 impl PinnedRepo {
