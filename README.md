@@ -7,9 +7,13 @@
 
 ## Installation
 
+```bash
+cargo add gh-pinned-rs
+```
+
 ```toml
 [dependencies]
-gh-pinned-rs = "1.0.4"
+gh-pinned-rs = "2.0.4"
 ```
 
 ## Example
@@ -18,10 +22,35 @@ gh-pinned-rs = "1.0.4"
 use gh_pinned_rs::pinned;
 
 #[tokio::main]
-async fn main() -> Result<(), String> {
-    let pinned_repos = pinned("qxb3").await?;
+async fn main() {
+    match pinned("qxb3").await {
+        Ok(repos) => println!("Pinned repositories: {:?}", repos),
+        Err(err) => eprintln!("Error: {}", err),
+    }
+}
+```
 
-    println("{:#?}", pinned_repos);
+## Blocking
+
+```bash
+cargo add gh-pinned-rs --features blocking
+```
+
+```toml
+[dependencies]
+gh-pinned-rs = { version = "2.0.4", features = ["blocking"] }
+```
+
+### Blocking Example
+
+```rust
+use gh_pinned_rs::blocking::pinned;
+
+fn main() {
+    match pinned("qxb3") {
+        Ok(repos) => println!("Pinned repositories: {:?}", repos),
+        Err(err) => eprintln!("Error: {}", err),
+    }
 }
 ```
 

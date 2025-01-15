@@ -215,7 +215,7 @@ dependencies = [
 
 [[package]]
 name = "gh-pinned-rs"
-version = "2.0.4"
+version = "2.0.5"
 dependencies = [
  "reqwest",
  "tl",
