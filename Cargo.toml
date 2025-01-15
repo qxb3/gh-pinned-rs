@@ -2,7 +2,7 @@
 name = "gh-pinned-rs"
 description = "Fetch pinned repositories from github."
 license = "MIT"
-version = "2.0.3"
+version = "2.0.4"
 documentation = "https://docs.rs/gh-pinned-rs"
 repository = "https://github.com/qxb3/gh-pinned-rs"
 homepage = "https://github.com/qxb3/gh-pinned-rs"
