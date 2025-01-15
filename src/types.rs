@@ -16,3 +16,5 @@ impl PinnedRepo {
         }
     }
 }
+
+pub type PinnedResult = Result<Vec<PinnedRepo>, String>;
